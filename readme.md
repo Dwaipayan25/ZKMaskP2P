@@ -67,7 +67,7 @@ Example: While current blockchain technologies are considered secure, future adv
 - **ScrollCoin.sol**: An ERC20 token created on the Scroll Chain, used within the platform for transactions, providing a custom cryptocurrency option for users.
 - **CustomLogic.sol**: The core smart contract where all critical operations occur, including the transfer and receipt of funds, as well as the verification and nullification of proofs to prevent reuse and ensure transaction integrity.
 
-## 4. How to start with it
+## 5. How to start with it
 1. Clone the Repo: ```git clone https://github.com/Dwaipayan25/ZKMaskP2P.git```
 2. ```npm install```
 3. Run ```npx sindri login``` and enter your ```username``` and ```password``` to create a new API key that is stored persistently in a configuration file in your home directory (see sindri login docs). This configuration file is sourced by both the CLI and the SDK by default.
@@ -77,7 +77,7 @@ Example: While current blockchain technologies are considered secure, future adv
 7. Run ```npm install```
 
 
-## 5. What's next for ZKMaskP2P?
+## 6. What's next for ZKMaskP2P?
 1. Think of ways to Enhance Security for Hash Generation
 2. Learn some Advanced Zero-Knowledge Proof Techniques and apply that
 3. Improved Currency Conversion Mechanisms: Multi-Currency Support, Dynamic Adjustment
