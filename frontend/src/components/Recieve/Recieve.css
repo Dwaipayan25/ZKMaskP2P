@@ -1,0 +1,45 @@
+/* ReceiveComponent.css */
+.receive-form {
+    max-width: 1800px; /* Increased from 500px to 800px */
+    margin: 40px auto; /* Increased margin for better centering and spacing */
+    padding: 30px; /* More padding for better visual space */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #f8f8f8;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adding a subtle shadow for depth */
+}
+
+.input-group {
+    margin-bottom: 20px; /* More space between inputs */
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px; /* Slightly more space above the input */
+    font-size: 18px; /* Larger font size for labels */
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 12px; /* Increased padding for larger input area */
+    font-size: 18px; /* Larger font size for better readability */
+    border-radius: 6px; /* Slightly more rounded corners */
+    border: 1px solid #ddd;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 15px; /* More padding for a bigger button */
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px; /* Larger font size for the button text */
+    border: none;
+    border-radius: 6px; /* Matching the input border radius */
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* More pronounced shadow on hover for the button */
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}

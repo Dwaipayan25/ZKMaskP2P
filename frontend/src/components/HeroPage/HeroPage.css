@@ -1,0 +1,72 @@
+.hero-page .section {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+.section1 .text-content, .section1 .buttons {
+    flex: 1;
+}
+
+.text-content h1 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.text-content p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.buttons a {
+    text-decoration: none; /* Removes the underline */
+    color: inherit; /* Keeps the text color the same as the button, if needed */
+}
+
+.buttons button {
+    display: block;
+    width: 40%; /* Updated width */
+    padding: 30px;
+    margin-top: 10px;
+    margin-left: auto; /* Added to center the button */
+    margin-right: auto; /* Added to center the button */
+    background-color: #0b73e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: #0056b3;
+}
+
+.section2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch; /* Ensures all boxes stretch to the same height */
+}
+
+.section2 .box {
+    width: 30%; /* Keeps the box width uniform */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the content horizontally */
+    text-align: center;
+}
+
+.section2 img {
+    width: 100%; /* Makes the image take full width of the box */
+    height: 200px; /* Sets a fixed height for all images */
+    object-fit: cover; /* Ensures the image covers the set area without distortion */
+    border-radius: 5px;
+}
+
+.section2 p {
+    margin-top: 0.5rem;
+    color: #555;
+    padding: 0 10px; /* Adds padding to the description for better readability */
+}
+

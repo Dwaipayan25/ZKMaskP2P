@@ -1,0 +1,54 @@
+.proof-container {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 10px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+  }
+  
+  .button, .error {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    background-color: #4CAF50; /* Green background for button */
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .button[disabled] {
+    background-color: #cccccc; /* Gray background when disabled */
+    cursor: not-allowed;
+  }
+  
+  .data-container {
+    display: flex;
+    flex-direction: column; /* Stack the boxes vertically */
+    justify-content: space-around;
+    align-items: center; /* Aligns the boxes to center horizontally */
+  }
+  
+  .data-box {
+    width: 80%; /* Set width of each box */
+    padding: 20px;
+    margin-top: 10px; /* Space between boxes */
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Soft shadow for boxes */
+    border-radius: 4px;
+  }
+  
+  .data-box h2 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .data-box pre {
+    background: #f4f4f4;
+    padding: 10px;
+    border: 1px solid #ccc;
+    overflow: auto; /* Adds scroll to pre if content is too wide */
+    white-space: pre-wrap; /* Wraps content in pre tag */
+    word-wrap: break-word; /* Ensures words do not overflow */
+  }
+  

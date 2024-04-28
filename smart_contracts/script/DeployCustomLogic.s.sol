@@ -14,7 +14,6 @@ contract DeployCustomLogic is Script{
             NoirCustomLogic noirCustomLogic = new NoirCustomLogic(noirVerifier,token,priceFeed);
         vm.stopBroadcast();
     }
-    
 }
 
 // forge script script/DeployCustomLogic.s.sol --rpc-url $URL --private-key $PKEY --broadcast
