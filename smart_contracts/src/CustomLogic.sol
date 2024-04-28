@@ -26,18 +26,18 @@ contract NoirCustomLogic {
         dataFeed = AggregatorV3Interface(dataFeedAddress);
     }
 
-    function sendProof(bytes calldata _proof, bytes32[] calldata _publicInputs) public {
-        // ZK verification
-        noirVerifier.verify(_proof, _publicInputs);
-
-        // Ensure proof is fresh
-        require(!nullifiers[_publicInputs[1]], "Proof already nullified");
-        publicInput = uint(_publicInputs[0]);
-        nullifiers[_publicInputs[1]] = true;
-    }
-
     function bytes32ToUint256(bytes32 b) public pure returns (uint256) {
         return uint256(b);
+    }
+
+    function getChainlinkDataFeedLatestAnswer() public view returns (int) {
+        (
+            ,
+            int answer,
+            ,
+            ,
+        ) = dataFeed.latestRoundData();
+        return answer;
     }
 
     function customerPaying(bytes32[] calldata _publicInputs, uint256 choice) public payable {
@@ -65,15 +65,7 @@ contract NoirCustomLogic {
     }
 
 
-    function getChainlinkDataFeedLatestAnswer() public view returns (int) {
-        (
-            ,
-            int answer,
-            ,
-            ,
-        ) = dataFeed.latestRoundData();
-        return answer;
-    }
+    
 
     function userReceiving(bytes calldata _proof, bytes32[] calldata _publicInputs, uint256 choice) public {
         
