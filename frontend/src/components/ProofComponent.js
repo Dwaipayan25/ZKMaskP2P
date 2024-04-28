@@ -9,6 +9,16 @@ function ProofComponent() {
   const [hash,setHash]=useState(null);
   const [amount,setAmount]=useState(null);
   const [link,setLink]=useState(null);
+  const [dummyAmount, setDummyAmount] = useState('');
+
+  const handleChange = (event) => {
+    setDummyAmount(event.target.value);
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    alert(`You entered: ${dummyAmount} ScrollCoin`);
+  };
 
   function extractValues(data) {
     const amountRegex = /amount = "([^"]+)"/;
@@ -71,8 +81,19 @@ function ProofComponent() {
 
   return (
     <div className="proof-container">
+      <div>
+        <h3>Enter Your Amount in ScrollCoin(SC) (Assumption 1wei SC == 1USDC)</h3>
+        <form onSubmit={handleSubmit}>
+          <input
+            type="text"
+            value={amount}
+            onChange={handleChange}
+            placeholder="Enter amount"
+          />
+        </form>
+      </div>
       <button onClick={fetchProof} disabled={loading}>
-         {loading ? 'Generating...' : 'Generate Proof'}
+         {loading ? 'Generating...' : 'Generate Link'}
        </button>
        
        
