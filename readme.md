@@ -45,6 +45,7 @@ Example: While current blockchain technologies are considered secure, future adv
 - Privacy Preservation: Throughout the process, the public addresses of both the user and the payee remain concealed, ensuring total anonymity.
 - Blockchain Record: The transaction is recorded on the blockchain as a normal transfer, without any links to the user's or payee's identity.
 ## 3. Diagram
+<img width="1259" alt="ZKMaskWorkflow" src="https://github.com/Dwaipayan25/ZKMaskP2P/assets/91361409/fee9c449-6105-4e7f-8aaa-00bb43bf15a6">
 
 ## 4. Brief overview of the technologies used in the ZK-Mask-P2P :
 ### 4.1 NOIR and Sindri CLI:
