@@ -11,8 +11,8 @@
     - [4.1 NOIR and Sindri CLI:](#41-noir-and-sindri-cli)
     - [4.2 Chainlink Price Feed](#42-chainlink-price-feed)
     - [4.3 Solidity and Smart Contracts:](#43-solidity-and-smart-contracts)
-  - [4. How to start with it](#5-how-to-start-with-it)
-  - [5. What's next for ZKMaskP2P?](#6-whats-next-for-zkmaskp2p)
+  - [5. How to start with it](#5-how-to-start-with-it)
+  - [6. What's next for ZKMaskP2P?](#6-whats-next-for-zkmaskp2p)
   - [Deployed \& Verified Contract Links on Sepoila:](#deployed--verified-contract-links-on-sepoila)
 
 
@@ -84,7 +84,7 @@ Example: While current blockchain technologies are considered secure, future adv
 - **ScrollCoin.sol**: An ERC20 token created on the Scroll Chain, used within the platform for transactions, providing a custom cryptocurrency option for users.
 - **CustomLogic.sol**: The core smart contract where all critical operations occur, including the transfer and receipt of funds, as well as the verification and nullification of proofs to prevent reuse and ensure transaction integrity.
 
-## 5. Getting started with it
+## 5. How to start with it
 1. Clone the Repo: ```git clone https://github.com/Dwaipayan25/ZKMaskP2P.git```
 2. ```cd ZKMaskP2P```
 3. ```npm install```
