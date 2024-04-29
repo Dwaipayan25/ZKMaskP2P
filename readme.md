@@ -66,12 +66,12 @@ Example: While current blockchain technologies are considered secure, future adv
 
 ## 4. Brief overview of the technologies used in the ZK-Mask-P2P :
 ### 4.1 NOIR and Sindri CLI:
-- Circuits: The project utilizes NOIR, a domain-specific language for writing zero-knowledge circuits, to define the cryptographic operations needed for generating and verifying proofs. Here the circuit is written in ```cd is-equal/src ``` 
+- Circuits: The project utilizes NOIR, a domain-specific language for writing zero-knowledge circuits, to define the cryptographic operations needed for generating and verifying proofs. Here the circuit is written in ```cd is-equal/src ```. You can also look at the circuit here [Circuits folder in repo](https://github.com/Dwaipayan25/ZKMaskP2P/tree/master/is-equal)
 - Sindri CLI: This command-line tool compiles the written circuits into executable code and generates the zero-knowledge proofs. The proofs are then integrated into the project's ecosystem to ensure transaction privacy and security.
-- Sindri TypeScript SDK: Facilitates developer interaction with the Sindri API, allowing them to compile circuits and generate proofs programmatically. This SDK streamlines the process of incorporating zero-knowledge proofs into applications, enhancing both development efficiency and application performance.
+- Sindri TypeScript SDK: Facilitates developer interaction with the Sindri API, allowing them to compile circuits and generate proofs programmatically. This SDK streamlines the process of incorporating zero-knowledge proofs into applications, enhancing both development efficiency and application performance. [Use of Sindri TS SDK](https://github.com/Dwaipayan25/ZKMaskP2P/blob/master/compile.ts) , [Generating proof using Sindri TS SDK](https://github.com/Dwaipayan25/ZKMaskP2P/blob/master/prove.ts)
 ### 4.2 Chainlink Price Feed
 - Purpose of Chainlink Price Feeds:
-   The project uses Chainlink Price Feeds to obtain real-time price data for ETH/USD. This data is crucial for determining the value of ETH relative to USD, enabling the conversion between ScrollCoin and ScrollETH.
+   The project uses Chainlink Price Feeds to obtain real-time price data for ETH/USD. This data is crucial for determining the value of ETH relative to USD, enabling the conversion between ScrollCoin and ScrollETH.  [Line no: 6,33,55,60,84,88: are major parts where I used ETH/USD price feed to change things onChain](https://github.com/Dwaipayan25/ZKMaskP2P/blob/master/smart_contracts/src/CustomLogic.sol)
 - Conversion Mechanism:
    The equivalence of 1 wei of ScrollCoin to 1 USDC is a key part of the project's design. By leveraging the ETH/USD price feed from Chainlink, the smart contracts can dynamically calculate the amount of ScrollETH equivalent to a given amount of ScrollCoin based on the current USD value of ETH.
   This conversion allows users to transact seamlessly in either ScrollCoin or ScrollETH, depending on their preference or the requirements of the transaction, without needing to manually calculate exchange rates.
