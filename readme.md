@@ -67,14 +67,16 @@ Example: While current blockchain technologies are considered secure, future adv
 - **ScrollCoin.sol**: An ERC20 token created on the Scroll Chain, used within the platform for transactions, providing a custom cryptocurrency option for users.
 - **CustomLogic.sol**: The core smart contract where all critical operations occur, including the transfer and receipt of funds, as well as the verification and nullification of proofs to prevent reuse and ensure transaction integrity.
 
-## 5. How to start with it
+## 5. Getting started with it
 1. Clone the Repo: ```git clone https://github.com/Dwaipayan25/ZKMaskP2P.git```
-2. ```npm install```
-3. Run ```npx sindri login``` and enter your ```username``` and ```password``` to create a new API key that is stored persistently in a configuration file in your home directory (see sindri login docs). This configuration file is sourced by both the CLI and the SDK by default.
-4. Run the server ```node backend.js```
-5. Go to smart Contract ```cd smart_contracts``` paste your own ```Verifier.sol ```
-6. Go to frontend ```cd frontend```
-7. Run ```npm install```
+2. ```cd ZKMaskP2P```
+3. ```npm install```
+4. Run ```npx sindri login``` and enter your ```username``` and ```password``` to create a new API key that is stored persistently in a configuration file in your home directory (see sindri login docs). This configuration file is sourced by both the CLI and the SDK by default.
+5. Run the server ```node backend.js```
+6. Go to smart Contract ```cd smart_contracts``` paste your own ```Verifier.sol ``` (or you can continue with the already provided one)
+7. Go to frontend ```cd frontend```
+8. Run ```npm install```
+9. ```npm run start``` enjoy running the project
 
 
 ## 6. What's next for ZKMaskP2P?
