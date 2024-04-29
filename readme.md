@@ -1,5 +1,22 @@
 # ZKMaskP2P
 
+##### Table of Contents 
+- [ZKMaskP2P](#zkmaskp2p)
+        - [Table of Contents](#table-of-contents)
+  - [0. Let's understand the problem ?](#0-lets-understand-the-problem-)
+  - [1. Inspiration behind making this](#1-inspiration-behind-making-this)
+  - [2. WorkFlow](#2-workflow)
+  - [3. Diagram](#3-diagram)
+  - [4. Brief overview of the technologies used in the ZK-Mask-P2P :](#4-brief-overview-of-the-technologies-used-in-the-zk-mask-p2p-)
+    - [4.1 NOIR and Sindri CLI:](#41-noir-and-sindri-cli)
+    - [4.2 Chainlink Price Feed](#42-chainlink-price-feed)
+    - [4.3 Solidity and Smart Contracts:](#43-solidity-and-smart-contracts)
+  - [4. How to start with it](#5-how-to-start-with-it)
+  - [5. What's next for ZKMaskP2P?](#6-whats-next-for-zkmaskp2p)
+  - [Deployed \& Verified Contract Links on Sepoila:](#deployed--verified-contract-links-on-sepoila)
+
+
+
 ## 0. Let's understand the problem ?
 
 Sharing your public key can expose you to various risks and vulnerabilities. Here are some solid reasons and examples illustrating why it's generally advisable to keep your public key private:
@@ -85,7 +102,7 @@ Example: While current blockchain technologies are considered secure, future adv
 3. Improved Currency Conversion Mechanisms: Multi-Currency Support, Dynamic Adjustment
 4. User Interface and Experience Enhancements: Mobile Integration, User-Centered Design
 
-### Deployed & Verified Contract Links on Sepoila:
+## Deployed & Verified Contract Links on Sepoila:
 1. https://sepolia.scrollscan.dev/address/0x1e066480866e5588a38d7749d17d098a187b2f1b
 2. https://sepolia.scrollscan.dev/address/0xd816998606256a0e1a23c3E01638774824248d93
 3. https://sepolia.scrollscan.dev/address/0x66725A0d3A992B83E5c4A793D49D60479075598a
